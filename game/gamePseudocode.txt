@@ -1,0 +1,23 @@
+functional elements:
+cup variable
+player variable
+
+cups fall from top in random sequence
+repeat sequence from the top after it passes the bottom of the screen
+as time passes the speed of the falling cups increases
+
+player moves from left to right to avoid falling cups - no arrow keys on mobile
+- think of alternative - use mouse position
+
+if the cups hit the player, game over
+after game over:
+    -note score
+    -compare high score
+    -reset game to start
+
+visual elements: - can use a jpeg
+player
+cups
+bin chute
+
+container - width and height of screen
