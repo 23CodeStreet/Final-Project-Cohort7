@@ -13,7 +13,9 @@ if the cups hit the player, game over
 after game over:
     -note score
     -compare high score
-    -reset game to start
+    - pop up to say "play again" or "exit game"
+      - on click "play again" resets the game to start
+      - on click "exit game" moves page to next section - Call to action?
 
 visual elements: - can use a jpeg
 player
@@ -21,3 +23,21 @@ cups
 bin chute
 
 container - width and height of screen
+
+to do:
+essential:
+- change background to match the rest of the website
+- correct cups so they only disappear once they are off the screen
+- add logos and lids to the Cups
+
+- correct the checkCollisions - sizing of the sheep
+- is it possible to make the sheep one piece? (like merge layers in photoshop) to avoid splitting error? (see screenshot)
+- create pop up to say "play again" and "exit game"
+  - create "play again" onclick function to reset the game
+  - create "exit game" onclick function to move to next part of website.
+
+if time:
+
+- score function and high score comparison function
+- display score and high score on "play again/exit game" pop up
+- increase speed/ frequency of falling Cups - start with 4? increase to 8?

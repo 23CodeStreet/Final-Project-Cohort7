@@ -1,29 +1,4 @@
-#gameContainer {
-  height: 100vh;
-  width: 100vw;
-  overflow: hidden;
-}
-body {
- background: #B0DAF1;
- overflow: hidden;
-}
-
-p {
-  color: white;
-  z-index: 1;
-}
-
-#gamePlayer {
-  /* width: 50px;
-  height: 50px;
-  background: green;
-  border-radius: 50%; */
-  position: absolute;
-  bottom: 30px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.coffeecup, .cup, .logo {
+/* .coffeecup, .cup, .logo {
  position: absolute;
 }
 .coffeecup {
@@ -42,7 +17,7 @@ p {
 }
 .cup:before, .cup:after {
  position: absolute;
- content: '';
+ content: ‘’;
  background: #F5F5F5;
 }
 .cup:before {
@@ -67,7 +42,7 @@ p {
 }
 .logo:before, .logo:after {
  position: absolute;
- content: '';
+ content: ‘’;
 }
 .logo:before {
  width: 120px;
@@ -81,7 +56,7 @@ p {
  top: 35px;
  width: 60px;
  height: 60px;
- background: green;
+ background: #ee7f3c;
  border-radius: 100%;
 }
 
@@ -140,19 +115,19 @@ body:before{
   top:0;
   animation:bob 1s infinite;
 }
-/* .sheep:hover .head{
+.sheep:hover .head{
   transform:rotate(100deg);
-} */
-/* .sheep:hover .eye{
+}
+.sheep:hover .eye{
   width:1.25em;
   height:1.25em;
-} */
-/* .sheep:hover .eye:before{
+}
+.sheep:hover .eye:before{
   right:30%;
 }
 .sheep:hover .top{
   animation-play-state:paused
-} */
+}
 .sheep .head{
   display:inline-block;
   width:5em;
@@ -181,9 +156,9 @@ body:before{
   right:-10%;
   border-radius:50% 40%;
 }
-/* .sheep .head:hover .ear.one, .sheep .head:hover .ear.two{
+.sheep .head:hover .ear.one, .sheep .head:hover .ear.two{
   transform:rotate(0deg);
-} */
+}
 
 .sheep .head.dead{
   transform:rotate(100deg);
@@ -268,4 +243,4 @@ body:before{
   height:10%;
   border-radius:100%;
   background:rgba(black,0.4);
-}
+} */
