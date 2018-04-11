@@ -28,16 +28,18 @@ to do:
 essential:
 - change background to match the rest of the website
 - correct cups so they only disappear once they are off the screen
-- add logos and lids to the Cups
-
 - correct the checkCollisions - sizing of the sheep
-- is it possible to make the sheep one piece? (like merge layers in photoshop) to avoid splitting error? (see screenshot)
+- is it possible to make the sheep one piece? (like merge layers in photoshop) to avoid splitting error? (see screenshot) - used a img in html
 - create pop up to say "play again" and "exit game"
   - create "play again" onclick function to reset the game
-  - create "exit game" onclick function to move to next part of website.
 
-if time:
+to do:
+
+- add logos and lids to the Cups
+- create "exit game" onclick function to move to next part of website.
 
 - score function and high score comparison function
+- based on how many seconds they survive for state how many cups went to landfill in that the time the played the gamePlayer
+
 - display score and high score on "play again/exit game" pop up
 - increase speed/ frequency of falling Cups - start with 4? increase to 8?
