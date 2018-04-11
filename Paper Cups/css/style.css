@@ -1,0 +1,539 @@
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+main {
+    height:100vh;
+}
+
+
+#scrollContainer{
+ height:1000000px
+/* this is saying that the scroll contain i.e the area which will be scrollable is set to the entire screen. */
+}
+
+#sceneContainer{
+ position: fixed;
+ top:0;
+ left:0;
+ width:500vw;
+ height:100vh;
+ display: flex;align-items: flex-end;
+/* this keeps the background fixed so if the background had imaged the trees would scroll across. */
+}
+
+#scene1Container{
+  position: fixed;
+	width:100%;
+	height:100%;
+	display: flex;
+	align-items: flex-end;
+	flex-direction: row;
+	background:rgb(220,220,255);
+}
+
+
+#text {
+  background: white;
+  width: 50%;
+  position: absolute;
+  top:15%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  opacity: 0;
+}
+
+#text p{
+font-family: 'Special Elite', cursive;
+text-align: center;
+font-size: 20px;
+line-height: 25px;
+/* animation-name: textFade;
+animation-duration: 2s; */
+}
+
+/* @keyframes textFade {
+  0%   {opacity: 0;}
+  100% {margin-bottom: 1;}
+} */
+
+#text2 {
+  width: 50%;
+  position: absolute;
+  top:25%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  opacity: 0;
+}
+
+#text2 p{
+font-family: 'Special Elite', cursive;
+text-align: center;
+font-size: 20px;
+line-height: 25px;
+background-color: white;
+}
+
+
+#treesContainer{
+    position:fixed;
+    left: 100vw;
+    min-width: 200vw;
+    bottom:0;
+}
+
+.treeContainer{
+ min-width: 200px;
+ height: 280px;
+ display: inline-block;
+ position: relative;
+ margin: 0 30px;
+ /*  */check what this is coding for specifically
+
+}
+.treeTrunk{
+ width: 45px;
+ height: 150px;
+ background: brown;
+ position: absolute;
+ left: 50%;
+ transform: translateX(-50%);
+ bottom: 0;
+/* this codes the tree trunk, size, height, colour, position */
+}
+
+.treeLeaves1{
+ width: 115px;
+ height: 115px;
+ background: green;
+ position: absolute;
+ left: 5%;
+ bottom: 30%;
+ border-radius: 50%;
+/* this codes one of the leaves, the tree is made up of 5 'leaves' each are a green circle */
+}
+
+.treeLeaves2{
+ width: 115px;
+ height: 115px;
+ background: green;
+ position: absolute;
+ right: 5%;
+ bottom: 30%;
+ border-radius: 50%;
+}
+.treeLeaves3{
+ width: 115px;
+ height: 115px;
+ background: green;
+ position: absolute;
+ left: 0%;
+ bottom: 45%;
+ border-radius: 50%;
+}
+
+.treeLeaves4{
+ width: 115px;
+ height: 115px;
+ background: green;
+ position: absolute;
+ right: 0%;
+ bottom: 45%;
+ border-radius: 50%;
+}
+
+.treeLeaves5{
+ width: 115px;
+ height: 115px;
+ background: green;
+ position: absolute;
+ left: 50%;
+ transform: translateX(-50%);
+ top: 0%;
+ border-radius: 50%;
+}
+
+
+#sunContainer{
+	height:110vh;
+	position: fixed;
+	left:80px;
+	top:50px;
+	z-index: -2;
+}
+
+#sun{
+	box-shadow: 0px 0px 150px #FFff00;
+	width:200px;
+	height:200px;
+	border-radius: 50%;
+	background:rgb(220,220,30);
+	opacity: 0.9;
+}
+
+
+
+#truckContainer{
+  position: fixed;
+  bottom:0;
+  left:50%;
+  width:500px;
+  height:250px;
+  transform:translateX(-50%);
+  animation-name: truckBounce;
+  animation-duration: 1s;
+  animation-iteration-count:infinite;
+}
+
+@keyframes truckBounce {
+    0%   {margin-bottom: 0px;}
+    25%  {margin-bottom: -1px;}
+    50%  {margin-bottom: 1px;}
+    100% {margin-bottom: 0px;}
+}
+
+@keyframes wheelSpin {
+    0% { transform: rotate(0); }
+    100% { transform: rotate(360deg); }
+}
+
+.wheel {
+  z-index: 1;
+  background-color: white;
+  position: absolute;
+  height: 71px;
+  width: 70px;
+  border-radius: 50%;
+  border-width: 5px;
+  border: 20px black solid;
+  display: inline-block;
+  animation-name: wheelSpin;
+  animation-duration: 1s;
+  animation-iteration-count:infinite;
+}
+
+.wheel1 {
+  bottom: 0px;
+  left: 50px
+}
+
+.wheel2 {
+  bottom: 0px;
+  right: 120px;
+}
+
+.wheel div {
+  background-color: white;
+  height: 30px;
+  width: 31px;
+  border-radius: 50%;
+}
+
+.truckBase {
+  position: absolute;
+  left: 60px;
+  height: 10px;
+  width: 420px;
+  bottom:40px;
+  border-width: 5px;
+  border: black solid;
+  background-color: red;
+}
+
+.log {
+  position: absolute;
+  height: 20px;
+  width: 300px;
+  border-width: 5px;
+  border: black solid;
+  background-color: brown;
+}
+
+.log1 {
+  left: 150px;
+  bottom: 60px;
+}
+
+.log2 {
+  left: 150px;
+  bottom: 90px;
+}
+
+.logTie {
+  position: absolute;
+  height: 60px;
+  width: 5px;
+  border-width: 5px;
+  border: black solid;
+}
+
+.logTie1 {
+  left: 170px;
+  bottom: 50px;
+}
+
+.logTie2 {
+  left: 400px;
+  bottom: 50px;
+}
+
+.cabin {
+  background-color: red;
+  position: absolute;
+  left:35px;
+  bottom: 35px;
+  height: 125px;
+  width: 100px;
+  border-width: 5px;
+  border: red solid;
+  border-top: transparent;
+}
+
+.cabin2 {
+  position: absolute;
+  left:35px;
+  bottom: 160px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 50px 100px;
+  border-color: transparent transparent red transparent;
+  line-height: 0px;
+}
+
+.window {
+  position: absolute;
+  left: 45px;
+  bottom: 100px;
+  background-color: white;
+  height: 50px;
+  width: 50px;
+  border-width: 5px;
+  border: black solid;
+}
+
+.base {
+  position: absolute;
+  left: 45px;
+  bottom: 10px;
+  height: 100px;
+  width: 350px;
+  background-color: black;
+}
+
+
+
+
+#factory{
+	position: fixed;
+	bottom:5px;
+	opacity:0;
+	left: 300px;
+}
+
+.factoryContainer{
+	position: relative;
+	width:350px;
+	height:400px;
+}
+.factoryBuilding{
+	position: absolute;
+	bottom:0;
+	left:0;
+	background:#101010;
+	width:100%;
+	height:200px;
+}
+.factorySmoke{
+	position: absolute;
+	top:-300px;
+	left:00px;
+	height:300px;
+	width:300px;
+	/*background-image: url('http://www.freepngimg.com/download/smoke/11-smoke-png-image-smokes.png')*/
+	background-image: url('https://media.giphy.com/media/fh4RQ8CJeFDVu/giphy.gif')
+
+}
+.factoryChimney{
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 300px solid #101010;
+	width:80px;
+	position: absolute;
+	top:0;
+	left:200px;
+	/*height:100%;*/
+	/*background:#101010;*/
+}
+
+.coffeecup, .cup, .cuplogo {
+  position: absolute;
+  opacity: 1;
+  width: 50px;
+  height: 50px;
+}
+.coffeecup {
+  transform: scale(0.2);
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: -200px;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  opacity: 0;
+}
+.cup {
+  width: 150px;
+  border-top: 250px solid #F5F5F5;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+}
+.cup:before, .cup:after {
+  position: absolute;
+  content: '';
+  background: #F5F5F5;
+}
+.cup:before {
+  width: 170px;
+  height: 30px;
+  top: -280px;
+  left: -35px;
+  border-radius: 3px;
+  box-shadow: 0 2px 0 rgba(#DEDBD2, 0.5);
+}
+.cup:after {
+  width: 140px;
+  height: 20px;
+  top: -300px;
+  left: -20px;
+  border-radius: 2px;
+}
+
+.cuplogo {
+  top: 40px;
+  left: 45px;
+}
+.cuplogo:before, .cuplogo:after {
+  position: absolute;
+  content: '';
+}
+.cuplogo:before {
+  width: 120px;
+  left: -40px;
+  top: 20px;
+  border-top: 90px solid #B28D67;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+.cuplogo:after {
+  top: 35px;
+  width: 60px;
+  height: 60px;
+  background: green;
+  border-radius: 100%;
+}
+
+
+/* #cloudContainer{
+  position: absolute;
+  top: 0;
+}
+.cloudContainer{
+  min-width: 200px;
+  height: 280px;
+  display: inline-block;
+  position: relative;
+  margin: 0 60px;
+
+}
+.cloudPuffs1{
+  width: 115px;
+  height: 115px;
+  background: aliceblue;
+  position: absolute;
+  left: 0%;
+  bottom: 30%;
+  border-radius: 50%;
+  box-shadow: 15px 5px 5px lightsteelblue;
+  z-index: -1;
+   /* */
+
+/* .cloudPuffs2{
+  width: 115px;
+  height: 115px;
+  background: aliceblue;
+  position: absolute;
+  right: -10%;
+  bottom: 30%;
+  border-radius: 50%;
+  box-shadow: 15px 5px 5px lightsteelblue;
+  z-index: 1
+}
+.cloudPuffs3{
+  width: 115px;
+  height: 115px;
+  background: aliceblue;
+  position: absolute;
+  left: -15%;
+  bottom: 45%;
+  border-radius: 50%;
+  box-shadow: 15px 5px 5px lightsteelblue;
+  z-index: -1
+}
+.cloudPuffs4{
+  width: 115px;
+  height: 115px;
+  background: aliceblue;
+  position: absolute;
+  right: -20%;
+  bottom: 45%;
+  border-radius: 50%;
+  box-shadow: 15px 5px 5px lightsteelblue;
+  z-index: 1
+}
+.cloudPuffs5{
+  width: 115px;
+  height: 115px;
+  background: aliceblue;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0%;
+  border-radius: 50%;
+  box-shadow: 15px 5px 5px lightsteelblue;
+  z-index: -1
+}
+.cloudRectangle{
+  width: 270px;
+  height: 100px;
+  background: aliceblue;
+  position: absolute;
+  bottom: 40%;
+  z-index: 1;
+  border-radius: 75px;
+} */
+
+/* @media screen and (max-width: 576px) {
+  .treesContainer {
+    width: 50%;
+    height: 30%;
+
+  } */
+
+
+#rectangle {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 1;
+    opacity: 1;
+    position: absolute;
+    top: 100%;
+  }
+
+  #coffeecup2 {
+    z-index: 2;
+  }

@@ -2,30 +2,71 @@
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  background-color: #B0DAF1
 }
 
-img {
-  max-width: 100%;
+
+form {
+font-family: 'Special Elite';
+color: #001242;
 }
 
-/* Headers */
-h1, h2, h3, h4, h5, h6 {
-  font-weight: bold;
-}
-
-h1 {
-  font-size: 4em;
+section{
   text-align: center;
 }
 
 h2 {
-  font-size: 2.75em;
+ font-size: 3em;
+ margin: 1.5em;
 }
 
-h3 {
+p{
   font-size: 2em;
+  width: 75%;
+  display: inline-block;
+  text-align: center;
+
 }
 
-h4 {
-  font-size: 1.45em;
+fieldset {
+  font-size: 1.5em;
+  display: inline-block;
+}
+
+form p{
+  opacity: 0;
+  transition: 2.5s;
+}
+
+label {
+  border: 3px solid #001242;
+  margin: 1em;
+  /* padding: top right bottom left; */
+  padding: 20px 20px 20px 25px;
+  float: left;
+  width: 20vw;
+  position: relative;
+}
+
+label:hover{
+  transition: 1s;
+}
+
+input {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+p:first-of-type{
+  margin: 1em;
+}
+
+span:first-of-type{
+  margin: 1em;
+}
+
+.hidden {
+  display: none;
 }
