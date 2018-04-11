@@ -1,31 +1,58 @@
-* {
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
+body {
+ overflow: hidden;
 }
 
-img {
-  max-width: 100%;
+#gameContainer {
+  position: relative;
+  overflow: hidden;
+  background: #B0DAF1;
 }
 
-/* Headers */
-h1, h2, h3, h4, h5, h6 {
+#scoreContainer{
+  font-size: 24px;
   font-weight: bold;
+  color: black;
+  text-align: right;
+}
+
+#gamePlayer {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.coffeeCup {
+  width: 30px;
+  height: 50px;
+  background: white;
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 h1 {
-  font-size: 4em;
+font-family: 'Special Elite';
+color: #001242;
+font-size: 64px;
+position:absolute;
+padding: 20px;
+margin: 20px;
+}
+
+p{
+  font-family: 'Special Elite';
+  color: #001242;
+  font-size: 24px;
   text-align: center;
-}
-
-h2 {
-  font-size: 2.75em;
-}
-
-h3 {
-  font-size: 2em;
-}
-
-h4 {
-  font-size: 1.45em;
+  padding:120px;
+  margin:50;
+  transition: 3s;
 }
