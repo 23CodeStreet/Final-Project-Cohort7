@@ -6,14 +6,130 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Final Project - Index</title>
+    <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
 
   <body>
+    <form>
+      <section>
+        <h2>How many single-use disposable cups are used per day in the UK?</h2>
+          <fieldset>
+            <label for="q1a1" onclick="onQ1Click(0)">
+              <input type="radio" id="q1a1" name="question-1" />
+              1.5 million
+            </label>
+            <label for="q1a2" onclick="onQ1Click(0)">
+              <input type="radio" id="q1a2" name="question-1" />
+              10 million
+            </label>
+            <label for="q1a3" onclick="onQ1Click(0)">
+              <input type="radio" id="q1a3" name="question-1" />
+              7 million
+            </label>
+            <label for="q1a4" onclick="onQ1Click(0)">
+              <input type="radio" id="q1a4" name="question-1" />
+              1 billion
+            </label>
+          </fieldset>
+          <div>
+            <p>In the UK, we use 7 million disposable coffee cups every day –that’s 2.5 billion every year!
+                <br></br>
+                <br> <span onclick="showNext(0, 1)"> Continue </br>
+            </p>
+          </div>
+      </section>
 
-    <h1>Final Project</h1>
+      <section class="hidden">
+        <h2>Are disposable coffee cups recyclable?</h2>
+          <fieldset>
+            <label for="q2a1" onclick="onQ1Click(1)">
+              <input type="radio" id="q2a1" name="question-2" />
+                Yes
+            </label>
+            <label for="q2a2" onclick="onQ1Click(1)">
+              <input type="radio" id="q2a2" name="question-2" />
+                No
+            </label>
+          </fieldset>
+          <div>
+            <p>
+              No, conventional paper coffee cups are not recyclable in Britain.
+              <br></br>
+              <br> They are made from cardboard with a thin layer of plastic tightly attached to the cup, this makes the cup non-recyclable. </br>
+              <br> <span onclick="showNext(1, 2)"> Continue </span>
+            </p>
+          </div>
+      </section>
 
+      <section class="hidden">
+        <h2>Can cup lids be recycled?</h2>
+          <fieldset>
+            <label for="q3a1" onclick="onQ1Click(2)">
+              <input type="radio" id="q3a1" name="question-3" />
+                Yes
+            </label>
+            <label for="q3a2" onclick="onQ1Click(2)">
+              <input type="radio" id="q3a2" name="question-3" />
+                No
+          </fieldset>
+          <div>
+            <p>
+              No, they are usually made of hard polystyrene which is not widely recycled.
+              <br></br>
+              <br> <span onclick="showNext(2, 3)"> Continue </span>
+            </p>
+          </div>
+      </section>
+
+      <section class="hidden">
+        <h2>What percentage of coffee cups are recycled?</h2>
+          <fieldset>
+            <label for="q1a1" onclick="onQ1Click(3)">
+              <input type="radio" id="q4a1" name="question-4" />
+                More than 50%
+            </label>
+            <label for="q4a2" onclick="onQ1Click(3)">
+              <input type="radio" id="q4a2" name="question-4" />
+                Less than 1%
+              </label>
+            <label for="q4a3" onclick="onQ1Click(3)">
+              <input type="radio" id="q4a3" name="question-4" />
+                Around 20%
+            </label>
+            <label for="q4a4" onclick="onQ1Click(3)">
+              <input type="radio" id="q4a4" name="question-4" />
+                Around 90%
+            </label>
+          </fieldset>
+          <div>
+            <p>
+              Less than 1% of coffee cups are recycled.
+                <br></br>
+                <br> <span onclick="showNext(3, 4)"> Continue </span>
+            </p>
+          </div>
+      </section>
+
+      <section class="hidden">
+        <h2>Do you own a reusable cup?</h2>
+          <fieldset>
+            <label for="q5a1" onclick="finalQ(0)">
+              <input type="radio" id="q5a1" name="question-5" />
+                Yes
+            </label>
+            <label for="q5a2" onclick="finalQ(1)">
+              <input type="radio" id="q5a2" name="question-5" />
+                No
+              </label>
+          </fieldset>
+          <div>
+            <p id="final-p">
+            </p>
+          </div>
+      </section>
+    </form>
 
     <script src="js/main.js"></script>
   </body>

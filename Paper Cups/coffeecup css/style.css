@@ -1,0 +1,66 @@
+ body {
+  background: lightblue;
+}
+.coffeecup, .cup, .cuplogo {
+  position: absolute;
+}
+.coffeecup {
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 200px;
+  height: 200px;
+  
+}
+.cup {
+  width: 100px;
+  border-top: 250px solid #F5F5F5;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+}
+.cup:before, .cup:after {
+  position: absolute;
+  content: '';
+  background: #F5F5F5;
+}
+.cup:before {
+  width: 170px;
+  height: 30px;
+  top: -280px;
+  left: -35px;
+  border-radius: 3px;
+  box-shadow: 0 2px 0 rgba(#DEDBD2, 0.5);
+}
+.cup:after {
+  width: 140px;
+  height: 20px;
+  top: -300px;
+  left: -20px;
+  border-radius: 2px;
+}
+  
+.cuplogo {
+  top: 40px;
+  left: 45px;
+}
+.cuplogo:before, .cuplogo:after {
+  position: absolute;
+  content: '';
+}
+.cuplogo:before {
+  width: 120px;
+  left: -40px;
+  top: 20px;
+  border-top: 90px solid #B28D67;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+.cuplogo:after {
+  top: 35px;
+  width: 60px;
+  height: 60px;
+  background: green;
+  border-radius: 100%;
+}
